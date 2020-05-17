@@ -49,9 +49,7 @@ def solve(board : list):
     return False
 
 def check(board : list, num : int, pos : tuple) -> bool:
-    '''
-    Takes an input list (`board`) and checks if an int (`num`) is a valid solution at the coordinates provided (`pos`)
-    '''
+
     for i in range(len(board)):
         if board[pos[0]][i] == num and pos[1] != i:
             return False
